@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Clock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<h1 class="clock" id="clock"></h1>
+
+<div id="timer">
+    <label for="timerInput">Nastavit časovač (minuty): </label>
+    <input type="number" id="timerInput" min="1">
+    <button onclick="startTimer()">Spustit časovač</button>
+</div>
+<div id="stopwatch">
+    <button onclick="startStopwatch()">Spustit stopky</button>
+    <button onclick="stopStopwatch()">Zastavit stopky</button>
+    <button onclick="resetStopwatch()">Resetovat stopky</button>
+</div>
+<div id="history">
+    <h3>Historie časů:</h3>
+    <ul id="historyList"></ul>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
